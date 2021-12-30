@@ -23,12 +23,10 @@ I WANT to be able to track my withdrawals and deposits with or without a data/in
 
 SO THAT my account balance is accurate when I am traveling 
 
-## Screenshots
+## Screenshot
 
-![]()
-
-
-![]()
+Budget Tracker Homempage
+![Budget Tracker Homepage](/public/images/Budget-Tracker-Homepage.png)
 
 ## Technologies
 This application utilizes the following:
