@@ -12,17 +12,17 @@ fetch("/api/transaction")
     populateTotal();
     populateTable();
     populateChart();
-  });
+});
 
 function populateTotal() {
   // reduce transaction amounts to a single total value
   let total = transactions.reduce((total, t) => {
     return total + parseInt(t.value);
   }, 0);
-
+  
   let totalEl = document.querySelector("#total");
   totalEl.textContent = total;
-}
+};
 
 function populateTable() {
   let tbody = document.querySelector("#tbody");
@@ -38,7 +38,7 @@ function populateTable() {
 
     tbody.appendChild(tr);
   });
-}
+};
 
 function populateChart() {
   // copy array and reverse it
@@ -76,7 +76,7 @@ function populateChart() {
         }]
     }
   });
-}
+};
 
 function sendTransaction(isAdding) {
   let nameEl = document.querySelector("#t-name");
@@ -142,7 +142,7 @@ function sendTransaction(isAdding) {
     nameEl.value = "";
     amountEl.value = "";
   });
-}
+};
 
 document.querySelector("#add-btn").onclick = function() {
   sendTransaction(true);
